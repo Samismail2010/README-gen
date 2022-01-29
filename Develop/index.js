@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
-const fs = require('fs');
 const inquirer = require('inquirer');
+const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
@@ -31,18 +31,13 @@ const questions = [
         }
     },
     {
-       type: 'list',
-       name: 'table of content',
-       message: ['Language', 'Installation', 'Usage', 'Contrib', 'License']
-    },
-    {
         type: 'checkbox',
         name: 'languages',
         message: 'What did you this project with? (Check all that apply)',
         choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
     },
     {
-        type: ' input',
+        type: 'input',
         name: 'installation',
         message: 'What is the installation process?',
         validate: installationInput => {
@@ -62,7 +57,7 @@ const questions = [
             if (usageInput){
                 return true
             } else {
-                console.log('Plese enter the project usage')
+                console.log('Please enter the project usage')
                 return false;
             }
         }
@@ -71,7 +66,16 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose a license for this project:',
-        choice: ['Apache', 'Boost', 'GNU', 'IBM', 'MIT', 'Mozilla', 'Open Database', 'None']
+        choices: [
+            "Apache",
+            "Boost",
+            "GNU",
+            "IBM",
+            "MIT",
+            "Mozilla",
+            "Open Database",
+            "None"
+        ]
     
     },
     {
@@ -135,7 +139,11 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+const init = () => {
+    promptUser()
+    .then(generateMarkdown)
+    .then(writeToFile)
+}
 
 // Function call to initialize app
 init();
