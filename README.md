@@ -1,7 +1,27 @@
-# Portfolio-generator
+# README.md
+
+  [![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)]function renderLicenseLink(data) {
+  if (data.license == 'Apache'){
+    return licenselink = '(https://opensource.org/licenses/Apache-2.0)'
+  } else if (data.license == 'Boost') {
+    return licenselink = '(https://www.boost.org/LICENSE_1_0.txt)'
+  } else if (data.license == 'GNU'){
+    return licenselink = '(https://www.gnu.org/licenses/gpl-3.0)'
+  } else if (data.license == 'IBM'){
+    return licenselink = '(https://opensource.org/licenses/IPL-1.0)'
+  } else if (data.license = 'MIT'){
+    return licenselink = '(https://opensource.org/licenses/MIT)'
+  } else if (data.license = 'Mozilla'){
+    return licenselink = '(https://opensource.org/licenses/MPL-2.0)'
+  } else if (data.license = 'Open Database'){
+    return licenselink = '(https://opendatacommons.org/licenses/odbl/)'
+  } else {
+    return licenselink = '';
+  }
+}
 
   ## Description
-this project will generate a portfolio per users command
+This project will generator a readme markdown
 
 ## Table of Contents
 -[Description](#description)
@@ -17,21 +37,21 @@ this project will generate a portfolio per users command
 inquirer
 
 ## Language
-JavaScript,HTML,ES6,jQuery,Node
+JavaScript,Node
 
 ## Usage
-generate profile quicker for user
+used to generate a read me markdown quicker while answering a series of questions
 
 ## License
 undefined
 
 ## Contributions
-no additional contributer
+no guidelines
 
 ## Test
-no test
+no testing
 
 ## Questions
-find me on Github: [samismail2010](https://github.com/samismail2010)
+find me on Github: [samsimail2010](https://github.com/samsimail2010)
 Email me with any questions: [samismail2010@gmail.com](mailto:samismail2010@gmail.com)
 
