@@ -25,28 +25,36 @@ function renderLicenseBadge(data) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
-  if (data.license == 'Apache'){
+  if (data.license == 'Apache') {
     return licenselink = '(https://opensource.org/licenses/Apache-2.0)'
   } else if (data.license == 'Boost') {
     return licenselink = '(https://www.boost.org/LICENSE_1_0.txt)'
-  } else if (data.license == 'GNU'){
+  } else if (data.license == 'GNU') {
     return licenselink = '(https://www.gnu.org/licenses/gpl-3.0)'
-  } else if (data.license == 'IBM'){
+  } else if (data.license == 'IBM') {
     return licenselink = '(https://opensource.org/licenses/IPL-1.0)'
-  } else if (data.license = 'MIT'){
+  } else if (data.license = 'MIT') {
     return licenselink = '(https://opensource.org/licenses/MIT)'
-  } else if (data.license = 'Mozilla'){
+  } else if (data.license = 'Mozilla') {
     return licenselink = '(https://opensource.org/licenses/MPL-2.0)'
-  } else if (data.license = 'Open Database'){
+  } else if (data.license = 'Open Database') {
     return licenselink = '(https://opendatacommons.org/licenses/odbl/)'
-  } else {
+  }
+   else {
     return licenselink = '';
   }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (data.license == "None"){
+    return licensesection = 'This project is not covered by any open source license. All rights are reserved.'
+  }
+  else {
+    return licensesection = `${licensebadge}${licenselink} This project is covered by the ${data.license} license.`
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -58,14 +66,14 @@ function generateMarkdown(data) {
 ${data.description}
 
 ## Table of Contents
--[Description](#description)
--[Installation](#installation)
--[Language](#language)
--[Usage](#usage)
--[License](#license)
--[Contributions](#contributions)
--[Test](#test)
--[Questions](#questions)
+*[Description](#description)
+*[Installation](#installation)
+*[Language](#language)
+*[Usage](#usage)
+*[License](#license)
+*[Contributions](#contributions)
+*[Test](#test)
+*[Questions](#questions)
 
 ## Installation
 ${data.installation}

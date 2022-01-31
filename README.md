@@ -24,8 +24,8 @@
 This project will generator a readme markdown
 
 ## Table of Contents
--[Description](#description)
--[Installation](#installation)
+*[Description](#description)
+*[Installation](#installation)
 -[Language](#language)
 -[Usage](#usage)
 -[License](#license)
