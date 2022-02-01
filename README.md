@@ -1,11 +1,12 @@
-# README.md generator
+# README.md
 
-  [![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-the purpus of this project is to create a readme .md using node.js inquirer and fs. While answering prompted questions, when we run node  it will generate a markdown
+the purpose of thius project is to create a readme.md using node.js inquirer and fs. while answering prompted questions, we we run node it will generate a markdown
 
 ## Table of Contents
+
 * [Description](#description)
 * [Installation](#installation)
 * [Language](#language)
@@ -22,10 +23,10 @@ Inquirer
 JavaScript,Node
 
 ## Usage
-Generate a readme.md for any projects
+Generate a readme.md for any project
 
 ## License
-[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0) This project is covered by the IBM license.
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MIT) This project is covered by the MIT license.
 
 ## Contributions
 Sam Ismail
