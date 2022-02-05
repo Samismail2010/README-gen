@@ -77,10 +77,10 @@ ${data.description}
 * [Questions](#questions)
 
 ## Installation
-${data.installation}
+* ${data.installation}
 
 ## Language
-${data.languages}
+* ${data.languages}
 
 ## Usage
 ${data.usage}
